@@ -340,3 +340,68 @@
                         }
                         
                         // and advanteges
+                        .author {
+                            background-position: center;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            min-height: 750px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            &__box {
+                                max-width: 650px;
+                                width: 100%;
+                                min-height: 215px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                background-color: $green;
+                            }
+                            &__title {
+                                font-size: 30px;
+                                line-height: 30px;
+                                color: #fff;
+                                margin-right: 45px;
+                                max-width: 262px;
+                                span {
+                                    @include f700;
+                                }
+                            }
+                            &-link {
+                                font-size: 18px;
+                                line-height: 36px;
+                                padding: 14px 40px;
+                                background-color: #fff;
+                            }
+                        }
+                        
+                        .tutorial {
+                            padding: 70px 0 120px;
+                            &__inner {
+                                display: flex;
+                                justify-content: space-between;
+                            }
+                            &__item {
+                                min-width: 170px;
+                                width: 100%;
+                            }
+                        }
+                        
+                        .tutorial__item {
+                            &-images {
+                                min-height: 270px;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                background-size: cover;
+                                margin-left: 30px;
+                            }
+                            &-title {
+                                font-size: 24px;
+                                background-color: #f8f8f8;
+                                text-align: center;
+                                @include f700;
+                                padding: 30px 10px;
+                                color: $bg;
+                                text-align: center;
+                            }
+                        }
