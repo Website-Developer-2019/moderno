@@ -36,6 +36,7 @@ body {
     font-size: 15px;
     line-height: 24px;
     color: $text;
+    overflow-x: hidden;
 }
 
 * .wrapper {
@@ -70,6 +71,10 @@ body {
     }
 }
 
+.page-contetn {
+    background-color: $grey;
+}
+
 .title {
     text-align: center;
     color: $bg;
@@ -82,4 +87,47 @@ body {
 .rate-star {
     display: inline-block;
     margin-right: 13px;
+}
+
+.breadcrumbs {
+    &__inner {
+        padding: 45px 0 40px;
+    }
+    &__list {
+        li {
+            display: inline-block;
+            position: relative;
+            &+li {
+                padding-left: 24px;
+                &::before {
+                    content: '-';
+                    position: absolute;
+                    left: 8px;
+                    color: $green;
+                }
+            }
+            &:last-child {
+                a,
+                span {
+                    color: $bg;
+                }
+            }
+        }
+        a {
+            color: #b0bec5;
+        }
+    }
+}
+
+.angle-right {
+    position: relative;
+    padding-left: 15px;
+    &::before {
+        content: '\f105';
+        position: absolute;
+        left: 0;
+        font-family: 'icomoon';
+        color: $green;
+        font-size: 14px;
+    }
 }
